@@ -1,0 +1,7 @@
+<h1>My Song</h1>
+
+<table>
+    <tr><td>Song:</td><td><%= link_to @song.name, song_path(@song)%></td></tr>
+    <tr><td>Artist:</td><td><%= link_to @song.artist.name, artist_path(@song.artist)%></td></tr>
+    <tr><td>Genre:</td><td><%= link_to @song.genre.name, genre_path(@song.genre)%></td></tr>
+</table>

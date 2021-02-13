@@ -1,0 +1,19 @@
+
+<h1> Artists </h1>
+
+
+<table>
+    
+        <tr>
+            <th>Name </th>
+            <th>Bio </th>
+        </tr>
+    
+        <%@artists.each do |artist|%>
+        <tr>
+            <td><%= link_to artist.name, artist_path(artist)%> </td> 
+             <td><%= artist.bio%> </td>
+        </tr>
+        <% end %>
+   
+</table>
